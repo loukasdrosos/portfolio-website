@@ -1,19 +1,19 @@
-import './Hero.css'
+import { heroInfo, personalInfo } from "../data/portfolioData"
+import "./Hero.css"
 
 function Hero() {
   return (
     <section id="home" className="hero">
       <div className="hero-content">
-        <p className="hero-label">Junior Software Developer</p>
+        <p className="hero-label">{heroInfo.label}</p>
 
         <h1>
-          I build software that solves <span>real problems.</span>
+          {heroInfo.title.split("real problems.")[0]}
+          <span>real problems.</span>
         </h1>
 
         <p className="hero-description">
-          Passionate about building efficient, scalable and meaningful solutions
-          through code. Interested in full-stack development, data, scientific
-          research and game development.
+          {heroInfo.description}
         </p>
 
         <div className="hero-buttons">
@@ -27,13 +27,15 @@ function Hero() {
         </div>
 
         <div className="social-links">
-          <a href="https://github.com/yourusername" target="_blank">
+          <a href={personalInfo.github} target="_blank" rel="noreferrer">
             GitHub
           </a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank">
+
+          <a href={personalInfo.linkedin} target="_blank" rel="noreferrer">
             LinkedIn
           </a>
-          <a href="mailto:youremail@example.com">
+
+          <a href={`mailto:${personalInfo.email}`}>
             Email
           </a>
         </div>
@@ -48,13 +50,13 @@ function Hero() {
 
         <div className="hero-info-card">
           <div>
-            <strong>Athens, Greece</strong>
+            <strong>{personalInfo.location}</strong>
             <span>Location</span>
           </div>
 
           <div>
-            <strong>BSc Geophysics</strong>
-            <span>Background</span>
+            <strong>Junior Developer</strong>
+            <span>Role</span>
           </div>
 
           <div>

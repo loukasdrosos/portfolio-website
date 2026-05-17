@@ -1,14 +1,15 @@
 .hero {
   width: min(1180px, calc(100% - 32px));
-  margin: 72px auto 0;
+  margin: 50px auto 0;
   padding: 32px 8px 64px;
 
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   align-items: center;
   gap: 72px;
-}
 
+  scroll-margin-top: 130px;
+}
 .hero-label {
   margin: 0 0 18px;
   color: #2563eb;
@@ -179,7 +180,12 @@
   .hero {
     grid-template-columns: 1fr;
     gap: 44px;
-    margin-top: 48px;
+    margin-top: 80px;
+    padding-top: 24px;
+  }
+
+  .hero-content {
+    max-width: 720px;
   }
 
   .hero-image-area {
@@ -189,25 +195,9 @@
 
 @media (max-width: 650px) {
   .hero {
-    margin-top: 36px;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .social-links {
-    flex-wrap: wrap;
-  }
-
-  .profile-placeholder {
-    height: 300px;
-  }
-
-  .hero-info-card {
-    width: 100%;
-    margin-top: 16px;
-    grid-template-columns: 1fr;
+    width: calc(100% - 24px);
+    margin-top: 56px;
+    padding-bottom: 36px;
   }
 }
+

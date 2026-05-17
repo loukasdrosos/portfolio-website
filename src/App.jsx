@@ -2,6 +2,10 @@ import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import About from "./components/About"
 import ProjectsSection from "./components/ProjectsSection"
+import PapersSection from "./components/PapersSection"
+import FeaturedProject from "./components/FeaturedProject"
+import Contact from "./components/Contact"
+import Footer from "./components/Footer"
 
 function App() {
   return (
@@ -12,7 +16,12 @@ function App() {
         <Hero />
         <About />
         <ProjectsSection />
+        <PapersSection />
+        <FeaturedProject />
+        <Contact />
       </main>
+
+      <Footer />
     </div>
   )
 }
