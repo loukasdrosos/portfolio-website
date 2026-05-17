@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar"
+import Hero from "./components/Hero"
 
 function App() {
   return (
@@ -6,10 +7,7 @@ function App() {
       <Navbar />
 
       <main>
-        <section id="home" className="temporary-section">
-          <h1>Portfolio website started</h1>
-          <p>Navbar component is now working.</p>
-        </section>
+        <Hero />
       </main>
     </div>
   )
