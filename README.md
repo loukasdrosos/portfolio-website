@@ -13,7 +13,7 @@ The project is built as a single-page portfolio and can also be reused as a temp
 Live URL:
 
 ```text
-Add your live GitHub Pages URL here later
+https://loukasdrosos.github.io/portfolio-website/
 ```
 
 ---

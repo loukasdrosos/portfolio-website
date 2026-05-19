@@ -42,7 +42,7 @@ function Hero() {
           <div className="profile-placeholder">
             <img
               className="profile-image"
-              src="../src/images/profile.jpg"
+              src={`${import.meta.env.BASE_URL}images/profile.jpg`}
               alt="My profile"
             />
           </div>

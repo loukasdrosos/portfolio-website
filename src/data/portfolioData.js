@@ -1,3 +1,5 @@
+const base = import.meta.env.BASE_URL
+
 export const personalInfo = {
   name: "Loukas Drosos",
   role: "Junior Software Developer",
@@ -76,7 +78,7 @@ export const projects = [
       "A clean, responsive and reusable portfolio website built with React to showcase projects, scientific papers and downloadable work.",
     tech: ["React", "Vite", "JavaScript", "CSS"],
     imageText: "Portfolio Website",
-    image: "../src/images/portfolio.png",
+    image: `${base}images/portfolio.png`,
     githubLink: "https://github.com/loukasdrosos/portfolio-website",
     demoLink: "#",
     demoLabel: "Live Website",
@@ -88,7 +90,7 @@ export const projects = [
       "A web application that fetches earthquake data from an XML source, stores it in a database and displays it through a REST API and frontend.",
     tech: ["Python", "Django REST Framework", "React", "SQL"],
     imageText: "Earthquake Dashboard",
-    image: "../src/images/Earthquakes.png",
+    image: `${base}images/Earthquakes.png`,
     githubLink: "https://github.com/loukasdrosos/Earthquakes_Monitoring_Webapp_Production",
     demoLink: "https://earthquakes-monitoring-webapp.vercel.app/",
     demoLabel: "View Project",
@@ -102,7 +104,7 @@ export const papers = [
     date: "2024",
     field: "5G Networks",
     pages: "92 pages",
-    link: ".\\src\\pdfs\\5G-NR-Security.pdf",
+    link: `${base}pdfs/5G-NR-Security.pdf`,
   },
   {
     title: "Linear Time Minimum Spanning Tree Algorithms",
@@ -110,7 +112,7 @@ export const papers = [
     date: "2024",
     field: "Algorithm Design",
     pages: "11 pages",
-    link: ".\\src\\pdfs\\Linear Time Minimum Spanning Tree Algorithms.pdf",
+    link: `${base}pdfs/Linear-Time-Minimum-Spanning-Tree-Algorithms.pdf`,
   },
   {
     title: "Security of the Border Gateway Protocol",
@@ -128,7 +130,7 @@ export const papers = [
     date: "2024",
     field: "Network Security",
     pages: "19 pages",
-    link: ".\\src\\pdfs\\Security of the Border Gateway Protocol.pdf",
+    link: `${base}pdfs/Security-of-the-Border-Gateway-Protocol.pdf`,
   },
 ]
 
@@ -138,7 +140,7 @@ export const featuredProject = {
   description:
     "Tower of Light is a game project I created to explore game development, level design, player movement, puzzle mechanics and interactive storytelling. The project includes a downloadable Windows executable so users can try the game directly.",
   imageText: "Tower of Light Screenshot",
-  image: "../src/images/ToL.png",
+  image: `${base}images/ToL.png`,
   details: [
     {
       label: "Type",
