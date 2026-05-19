@@ -6,9 +6,11 @@ function FeaturedProject() {
     <section id="featured-project" className="featured-section">
       <div className="featured-card">
         <div className="featured-visual">
-          <div className="featured-image-placeholder">
-            {featuredProject.imageText}
-          </div>
+          <img
+            className="featured-image"
+            src={featuredProject.image}
+            alt={`${featuredProject.title} screenshot`}
+          />
         </div>
 
         <div className="featured-content">
@@ -30,7 +32,11 @@ function FeaturedProject() {
           </div>
 
           <div className="featured-actions">
-            <a href={featuredProject.downloadLink} className="download-button">
+            <a 
+              href={featuredProject.downloadLink} 
+              className="download-button" 
+              target="_blank"
+            >
               Download Game
             </a>
 
@@ -43,10 +49,6 @@ function FeaturedProject() {
               View GitHub
             </a>
           </div>
-
-          <p className="download-note">
-            {featuredProject.note}
-          </p>
         </div>
       </div>
     </section>

@@ -1,11 +1,10 @@
 export const personalInfo = {
-  name: "Your Name",
+  name: "Loukas Drosos",
   role: "Junior Software Developer",
   location: "Athens, Greece",
-  email: "youremail@example.com",
-  github: "https://github.com/yourusername",
-  linkedin: "https://linkedin.com/in/yourusername",
-  cv: "/cv/your-cv.pdf",
+  email: "drossosl@gmail.com",
+  github: "https://github.com/loukasdrosos",
+  linkedin: "https://linkedin.com/in/loukas-drosos-b20a4657",
 }
 
 export const heroInfo = {
@@ -25,6 +24,8 @@ export const aboutInfo = {
     "JavaScript",
     "C#",
     ".NET",
+    "Java",
+    "Python",
     "Django",
     "REST APIs",
     "SQL",
@@ -42,81 +43,69 @@ export const projects = [
       "A clean, responsive and reusable portfolio website built with React to showcase projects, scientific papers and downloadable work.",
     tech: ["React", "Vite", "JavaScript", "CSS"],
     imageText: "Portfolio Website",
-    githubLink: "https://github.com/yourusername/portfolio-website",
+    image: "../src/images/portfolio.png",
+    githubLink: "https://github.com/loukasdrosos/portfolio-website",
     demoLink: "#",
     demoLabel: "Live Website",
   },
   {
-    title: "Tower of Light",
-    type: "Game Development",
-    description:
-      "A game project featuring custom mechanics, level design and a downloadable Windows executable.",
-    tech: ["Unity", "C#", "Game Design"],
-    imageText: "Tower of Light",
-    githubLink: "https://github.com/yourusername/tower-of-light",
-    demoLink: "#",
-    demoLabel: "Download Game",
-  },
-  {
-    title: "Earthquake Data Website",
+    title: "Earthquake Web Monitoring Application",
     type: "Full-Stack Project",
     description:
       "A web application that fetches earthquake data from an XML source, stores it in a database and displays it through a REST API and frontend.",
-    tech: ["Django", "Django REST Framework", "React", "MySQL"],
+    tech: ["Python", "Django REST Framework", "React", "SQL"],
     imageText: "Earthquake Dashboard",
-    githubLink: "https://github.com/yourusername/earthquake-data-website",
-    demoLink: "#",
-    demoLabel: "View Project",
-  },
-  {
-    title: "Contact Upload Middleware",
-    type: "Backend/API Project",
-    description:
-      "A middleware API designed to receive contact data, validate it and upload it to an external campaign management system.",
-    tech: ["C#", ".NET", "REST API", "Serilog"],
-    imageText: "Middleware API",
-    githubLink: "https://github.com/yourusername/contact-upload-middleware",
-    demoLink: "#",
+    image: "../src/images/Earthquakes.png",
+    githubLink: "https://github.com/loukasdrosos/Earthquakes_Monitoring_Webapp_Production",
+    demoLink: "https://earthquakes-monitoring-webapp.vercel.app/",
     demoLabel: "View Project",
   },
 ]
 
 export const papers = [
   {
-    title: "First Scientific Paper Title",
-    summary:
-      "A short summary of the first scientific paper. Describe the subject, the problem studied and the main result or method.",
+    title: "Comprehensive analysis of 5G NR: Overview of the Physical Layer, Network Security, and its vulnerabilities to Jamming Attacks",
+    summary: `The objective of this thesis is the study of security issues in 5G, emphasizing on the 5G NR physical (PHY) layer and its vulnerabilities to jamming attacks. The thesis includes an overview of the 5G network and its security weaknesses, 5G NR and the 5G core network and an analysis of the 5G NR PHY layer. Moreover, the thesis explores the different types of jamming attacks and examines mitigation techniques that can make the PHY layer more resilient to attacks in the next generation of wireless networks.`,
     date: "2024",
-    field: "Scientific Research",
-    pages: "12 pages",
-    link: "/papers/paper-1.pdf",
+    field: "5G Networks",
+    pages: "92 pages",
+    link: ".\\src\\pdfs\\Comprehensive analysis of 5G NR Overview of the Physical Layer, Network Security, and its vulnerabilities to Jamming Attacks.pdf",
   },
   {
-    title: "Second Scientific Paper Title",
-    summary:
-      "A short summary of the second scientific paper. Keep it simple and understandable for non-specialist visitors.",
-    date: "2023",
-    field: "Data Analysis",
-    pages: "9 pages",
-    link: "/papers/paper-2.pdf",
+    title: "Linear Time Minimum Spanning Tree Algorithms",
+    summary: `The problem considered here is that of finding a minimum spanning tree in a connected graph. Two algorithms with linear-time time complexity have been presented in the minimum spanning tree problem history, a randomized linear-time algorithm was presented in 1995 by Karger, Klein and Tarjan, and a linear-time deterministic algorithm was presented in 2000 by Chazelle. The paper includes a detailed description of the two algorithms, their implementation and a comparison of their performance.`,
+    date: "2024",
+    field: "Algorithm Design",
+    pages: "11 pages",
+    link: ".\\src\\pdfs\\Linear Time Minimum Spanning Tree Algorithms.pdf",
   },
   {
-    title: "Third Scientific Paper Title",
-    summary:
-      "A short summary of the third scientific paper. Explain why the work matters and what tools or methods were used.",
-    date: "2023",
-    field: "Geophysics",
-    pages: "10 pages",
-    link: "/papers/paper-3.pdf",
+    title: "Security of the Border Gateway Protocol",
+    summary: `Technological advancements have made communication one of the most
+    important achievements of today's world. The Border Gateway Protocol (BGP) is the
+    standard interdomain routing protocol of the Internet, which means it has a crucial
+    role in current communications. Despite its importance, the conception and
+    development of BGP didn’t include any internal security mechanism, which has proven
+    to be a major limitation. Security analyses in the last years have shown that the
+    Internet routing infrastructure is prone to many vulnerabilities and attacks which can
+    cause large scale outages. Since the adoption of BGP, several security features have
+    been proposed, but only some minor tweaks have actually been implemented. In this
+    paper, we conduct a review of current BGP threats and explore security proposals and
+    standardization efforts, as well as their advantages and limitations`,
+    date: "2024",
+    field: "Network Security",
+    pages: "19 pages",
+    link: ".\\src\\pdfs\\Security of the Border Gateway Protocol.pdf",
   },
 ]
 
 export const featuredProject = {
-  label: "Featured Project",
+  label: "Full-Stack Project",
   title: "Tower of Light",
   description:
     "Tower of Light is a game project I created to explore game development, level design, player movement, puzzle mechanics and interactive storytelling. The project includes a downloadable Windows executable so users can try the game directly.",
   imageText: "Tower of Light Screenshot",
+  image: "../src/images/ToL.png",
   details: [
     {
       label: "Type",
@@ -128,11 +117,9 @@ export const featuredProject = {
     },
     {
       label: "Built With",
-      value: "Unity / C#",
+      value: "Java",
     },
   ],
-  downloadLink: "#",
-  githubLink: "https://github.com/yourusername/tower-of-light",
-  note:
-    "Recommended: host the executable on GitHub Releases or Itch.io and link the button to that download page.",
+  downloadLink: "https://loukasdrosos.itch.io/tower-of-light",
+  githubLink: "https://github.com/loukasdrosos/Tower-of-Light",
 }

@@ -20,10 +20,6 @@ function Hero() {
           <a href="#projects" className="primary-button">
             View My Projects
           </a>
-
-          <a href="#contact" className="secondary-button">
-            Contact Me
-          </a>
         </div>
 
         <div className="social-links">
@@ -44,7 +40,11 @@ function Hero() {
       <div className="hero-image-area">
         <div className="profile-card">
           <div className="profile-placeholder">
-            Your Photo
+            <img
+              className="profile-image"
+              src="../src/images/profile.jpg"
+              alt="My profile"
+            />
           </div>
         </div>
 

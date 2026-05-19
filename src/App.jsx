@@ -16,8 +16,8 @@ function App() {
         <Hero />
         <About />
         <ProjectsSection />
-        <PapersSection />
         <FeaturedProject />
+        <PapersSection />
         <Contact />
       </main>
 

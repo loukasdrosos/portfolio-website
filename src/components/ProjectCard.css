@@ -17,14 +17,19 @@
 }
 
 .project-image {
-  height: 190px;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
 
-  display: grid;
-  place-items: center;
-
-  background:
-    linear-gradient(135deg, rgba(219, 234, 254, 0.95), rgba(239, 246, 255, 0.95));
+  background: #dbeafe;
   border-bottom: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 .project-image span {

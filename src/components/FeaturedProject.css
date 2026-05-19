@@ -1,7 +1,7 @@
 .featured-section {
   width: min(1180px, calc(100% - 32px));
-  margin: 40px auto 0;
-  padding: 48px 0;
+  margin: 4px auto 0;
+  padding: 4px 0;
 }
 
 .featured-card {
@@ -21,27 +21,35 @@
 }
 
 .featured-visual {
-  padding: 14px;
+  width: 100%;
+  height: 380px;
+
+  padding: 0;
+  overflow: hidden;
 
   background: rgba(248, 250, 252, 0.82);
   border: 1px solid rgba(148, 163, 184, 0.2);
   border-radius: 26px;
 }
 
-.featured-image-placeholder {
-  min-height: 360px;
+.featured-image {
+  width: 100%;
+  height: 100%;
+  display: block;
 
-  display: grid;
-  place-items: center;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 26px;
+}
 
-  background:
-    linear-gradient(135deg, rgba(219, 234, 254, 0.95), rgba(239, 246, 255, 0.95));
-  border-radius: 20px;
+.section-label {
+  margin: 0 0 12px;
 
   color: #2563eb;
-  font-size: 1.15rem;
+  font-size: 0.9rem;
   font-weight: 800;
-  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 .featured-content h2 {
@@ -152,28 +160,8 @@
     grid-template-columns: 1fr;
   }
 
-  .featured-image-placeholder {
-    min-height: 280px;
-  }
-}
-
-@media (max-width: 650px) {
-  .featured-card {
-    padding: 24px;
-  }
-
-  .featured-details {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 900px) {
-  .featured-card {
-    grid-template-columns: 1fr;
-  }
-
-  .featured-image-placeholder {
-    min-height: 280px;
+  .featured-image {
+    min-height: 200px;
   }
 }
 
@@ -202,5 +190,17 @@
   .download-button,
   .outline-button {
     width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .featured-visual {
+    height: 300px;
+  }
+}
+
+@media (max-width: 650px) {
+  .featured-visual {
+    height: 240px;
   }
 }

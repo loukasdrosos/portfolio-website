@@ -3,9 +3,9 @@ import "./ProjectCard.css"
 function ProjectCard({ project }) {
   return (
     <article className="project-card">
-      <div className="project-image">
-        <span>{project.imageText}</span>
-      </div>
+    <div className="project-image">
+      <img src={project.image} alt={`${project.title} preview`} />
+    </div>
 
       <div className="project-content">
         <p className="project-type">{project.type}</p>

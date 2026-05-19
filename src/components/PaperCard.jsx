@@ -21,9 +21,9 @@ function PaperCard({ paper }) {
           <span>{paper.pages}</span>
         </div>
 
-        <a href={paper.link} target="_blank" rel="noreferrer">
-          View Paper
-        </a>
+      <a href={paper.link} download>
+        Download PDF
+      </a>
       </div>
     </article>
   )

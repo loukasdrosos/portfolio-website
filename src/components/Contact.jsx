@@ -11,7 +11,7 @@ function Contact() {
           <h2>Let’s connect</h2>
 
           <p className="contact-description">
-            I am open to junior software developer opportunities, collaborations
+            I am open to software developer opportunities, collaborations
             and interesting projects. Feel free to contact me or connect with me
             online.
           </p>
