@@ -102,7 +102,7 @@ export const papers = [
     date: "2024",
     field: "5G Networks",
     pages: "92 pages",
-    link: ".\\src\\pdfs\\Comprehensive analysis of 5G NR Overview of the Physical Layer, Network Security, and its vulnerabilities to Jamming Attacks.pdf",
+    link: ".\\src\\pdfs\\5G-NR-Security.pdf",
   },
   {
     title: "Linear Time Minimum Spanning Tree Algorithms",
