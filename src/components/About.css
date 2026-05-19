@@ -1,7 +1,7 @@
 .about-section {
   width: min(1180px, calc(100% - 32px));
-  margin: 10px auto 0;
-  padding: 3px 0;
+  margin: 24px auto 0;
+  padding: 24px 0;
 }
 
 .about-card {
@@ -80,6 +80,124 @@
   font-weight: 700;
 
   box-shadow: 0 10px 24px rgba(15, 23, 42, 0.04);
+}
+
+.about-details-grid {
+  margin-top: 24px;
+
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 24px;
+}
+
+.timeline-card {
+  padding: 28px;
+
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  border-radius: 30px;
+
+  backdrop-filter: blur(18px);
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.08);
+}
+
+.timeline-card h3 {
+  margin: 0 0 22px;
+
+  color: #0f172a;
+  font-size: 1.25rem;
+}
+
+.timeline-list {
+  display: grid;
+  gap: 24px;
+}
+
+.timeline-item {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 14px;
+}
+
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  margin-top: 6px;
+
+  background: #2563eb;
+  border-radius: 50%;
+  box-shadow: 0 0 0 6px rgba(37, 99, 235, 0.12);
+}
+
+.timeline-period {
+  margin: 0 0 6px;
+
+  color: #2563eb;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.timeline-item h4 {
+  margin: 0;
+
+  color: #0f172a;
+  font-size: 1.05rem;
+}
+
+.timeline-company {
+  margin: 6px 0 0;
+
+  color: #334155;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.timeline-description {
+  margin: 12px 0 0;
+
+  color: #475569;
+  font-size: 0.94rem;
+  line-height: 1.65;
+}
+
+.timeline-highlights {
+  margin: 14px 0 0;
+  padding-left: 18px;
+
+  color: #475569;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.timeline-highlights li::marker {
+  color: #2563eb;
+}
+
+@media (max-width: 900px) {
+  .about-details-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-details-grid {
+    gap: 18px;
+  }
+
+  .timeline-card {
+    padding: 22px;
+  }
+
+  .timeline-item {
+    gap: 12px;
+  }
+
+  .timeline-description,
+  .timeline-highlights {
+    font-size: 0.88rem;
+  }
 }
 
 @media (max-width: 850px) {

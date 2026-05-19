@@ -12,7 +12,7 @@ function ProjectsSection() {
           <h2>Selected work</h2>
           <p>
             A collection of projects that show my work in frontend development,
-            backend APIs, scientific applications and game development.
+            backend APIs and game development.
           </p>
         </div>
       </div>

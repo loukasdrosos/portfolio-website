@@ -16,9 +16,9 @@ export const heroInfo = {
 
 export const aboutInfo = {
   label: "About Me",
-  title: "A junior developer focused on building clean and useful software.",
+  title: "Junior Software Developer with a background in physics, computing and contact-center systems.",
   description:
-    "I enjoy working on full-stack applications, REST APIs, databases, scientific projects and game development. My goal is to keep improving as a developer by building real projects, writing clean code and learning how software is designed from start to finish.",
+    "I am currently working as a Junior Software / CTI Developer, building middleware applications, developing Altitude scripts, supporting contact-center integrations and working with enterprise platforms such as Altitude and Genesys. I enjoy backend and full-stack development, REST APIs, databases, scripting, game development and building reliable systems that solve real business problems.",
   skills: [
     "React",
     "JavaScript",
@@ -30,8 +30,41 @@ export const aboutInfo = {
     "REST APIs",
     "SQL",
     "Git",
+    "Altitude",
+    "Genesys",
+    "Middleware",
     "Game Development",
     "Scientific Research",
+  ],
+  experience: [
+    {
+      role: "Software Developer",
+      company: "Mellon Group",
+      period: "Feb 2025 - Present",
+      location: "Athens, Greece",
+      description:
+        "Build middleware and integration components for contact-center environments. Develop and maintain Altitude scripts, automate workflows, troubleshoot business logic and support integrations between contact-center platforms and external systems.",
+      highlights: [
+        "Middleware and REST API development",
+        "Altitude scripting and contact-center workflows",
+        "Genesys and Altitude platform support",
+        "Debugging, testing and production troubleshooting",
+      ],
+    },
+  ],
+  education: [
+    {
+      degree: "MSc in Control and Computing",
+      school: "National and Kapodistrian University of Athens",
+      period: "Oct 2024 - Feb 2026",
+      grade: "Grade: 9.2",
+    },
+    {
+      degree: "BSc in Physics",
+      school: "National and Kapodistrian University of Athens",
+      period: "Sep 2019 - Jul 2024",
+      grade: "Grade: 7",
+    },
   ],
 }
 

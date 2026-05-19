@@ -1,18 +1,104 @@
-# React + Vite
+# Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean and responsive personal portfolio website built with **React** and **Vite**.
 
-Currently, two official plugins are available:
+This website is designed to showcase personal information, software projects, scientific papers, a featured game project, contact links, and downloadable files such as PDFs and CVs.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The project is built as a single-page portfolio and can also be reused as a template by editing one main data file.
 
-## React Compiler
+---
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Live Demo
 
-Note: This will impact Vite dev & build performances.
+Live URL:
 
-## Expanding the ESLint configuration
+```text
+Add your live GitHub Pages URL here later
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Features
+
+- Responsive single-page portfolio
+- Clean light UI with glassmorphism-inspired cards
+- Hero section with profile image
+- About section
+- Projects section
+- Scientific papers section with PDF downloads
+- Featured project section
+- Contact section
+- Centralized content file for easy editing
+- Mobile-friendly layout
+
+---
+
+## Technologies Used
+
+- React
+- Vite
+- JavaScript
+- CSS
+- GitHub Pages
+
+---
+
+## Installation
+
+To run this project locally, you need **Node.js** installed on your computer.
+
+Clone the repository:
+
+```bash
+git clone https://github.com/loukasdrosos/portfolio-website.git
+```
+
+Go into the project folder:
+
+```bash
+cd portfolio-website
+```
+
+Install the dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Then open the local URL shown in the terminal.
+
+Usually it is:
+
+```text
+http://localhost:5173
+```
+
+---
+
+## How to Edit the Website
+
+Most website content is stored in:
+
+```text
+src/data/portfolioData.js
+```
+
+Edit this file to change your personal information, hero text, projects, papers, links, and featured project.
+
+---
+
+## Author
+
+Created by **Loukas Drosos**.
+
+---
+
+## License
+
+This project is open-source and can be used as a personal portfolio template.
